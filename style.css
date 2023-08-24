@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200;1,400&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --black: #111111;
+  --green: #008f18;
+  --red: #9c0000;
+  --light-color: #666;
+  --box-shadow: 0.5rem 0.5rem #007070;
+}
+
+* {
+  font-family: "nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  /* transition: all 0.2s linear; */
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 61.5%;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+body {
+  background: #ffffff;
+}
+section {
+  padding: 1rem 2%;
+  z-index: 900;
+  background: #fff;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.btn {
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  background-color: #fff;
+  border: 0.2rem solid var(--black);
+  color: var(--black);
+  cursor: pointer;
+  z-index: 0;
+  margin: 1.5rem 0;
+  padding: 1rem 2rem;
+  height: 4rem;
+}
+
+.btn:hover {
+  color: #fff;
+  background: var(--green);
+  border: 0.2rem solid #fff;
+}
+.carouse1 .image-content {
+  cursor: grab;
+  user-select: none;
+}
+.carouse2 .image-content {
+  cursor: grab;
+  user-select: none;
+}
+.carouse3 .image-content {
+  cursor: grab;
+  user-select: none;
+}
+
+.heading span {
+  color: var(--red);
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1010;
+}
+header .logo {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: 0 2rem;
+}
+header .Navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .Navbar a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--green);
+  margin: 2rem;
+  font-weight: 500;
+}
+header .Navbar a:hover {
+  background: var(--green);
+  color: #fff;
+}
+header .Navbar .search-bar {
+  height: 3rem;
+  width: 30rem;
+  margin: 1rem;
+  /* border: 0.2rem solid var(--black); */
+  border-radius: 1.5rem;
+  align-items: center;
+  text-align: center;
+  background: var(--green);
+  color: #fff;
+  box-shadow: -1px 2px 8px -4px rgba(0, 0, 0, 0.66);
+}
+header .Navbar .search-bar::placeholder {
+  color: #ffffff;
+}
+#search-icon header .Navbar a:hover {
+  background: var(--red);
+  color: #fff;
+  transition: all 0.5s ease;
+}
+header .icons i,
+header .icons a {
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 2rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--green);
+  border-radius: 50%;
+  background: #eee;
+}
+header .icons i:hover,
+header .icons a:hover {
+  color: #fff;
+  background: var(--green);
+  transform: rotate(360deg);
+  transition: all 3s ease;
+}
+header .icons #menu_bars {
+  display: none;
+}
+/* header2 */
+.header2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 999;
+  gap: 1rem;
+  background: var(--black);
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+.header2 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.header2 a:hover {
+  color: var(--black);
+  background: #fff;
+}
+/* --------------header2 ends---------- */
+.dropdown {
+  position: relative;
+  z-index: 2;
+  padding: 0 2rem;
+  min-height: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  /* background: var(--light-color); */
+  justify-content: space-between;
+}
+.dropdown_list {
+  position: relative;
+  display: flex;
+}
+.dropdown_list #global1 {
+  position: relative;
+  width: 10em;
+  border-radius: 0.5rem;
+  background: var(--green);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+}
+.dropdown_list #global2 {
+  position: relative;
+  width: 10em;
+  border-radius: 0.5rem;
+  background: var(--green);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+}
+.dropdown_list #global3 {
+  position: relative;
+  width: 10em;
+  border-radius: 0.5rem;
+  background: var(--green);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+}
+.dropdown_list #global4 {
+  position: relative;
+  width: 10em;
+  border-radius: 0.5rem;
+  background: var(--green);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+}
+.dropdown button {
+  width: 10em;
+  margin: 0.4rem 0;
+  padding: 0.5rem 0.5rem;
+  height: 3rem;
+}
+.dropdown_list .dropdown_container {
+  position: relative; /* Add this */
+}
+.dropdown_container ul {
+  position: absolute;
+  width: 13.5em;
+  z-index: 100;
+  font-size: 1.5rem;
+  background: #000000;
+  border-radius: 0.5rem;
+
+  display: none;
+}
+.dropdown_container ul li {
+  color: #ffffff;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+.dropdown_container ul li:hover {
+  color: #ffffff;
+  background: var(--green);
+}
+.dropdown_container .show {
+  display: block;
+}
+.home {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  min-height: 70vh;
+  align-items: center;
+  background-size: cover;
+  z-index: 0;
+}
+.home .box-container {
+  flex: 1 1 24rem;
+  padding: 1rem;
+}
+.home .box-container h3 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding: 1rem;
+  justify-content: center;
+  /* color: #a00202; */
+}
+.home .box-container p {
+  font-size: 1.35rem;
+  justify-content: center;
+  color: var(--light-color);
+  padding: 1rem;
+}
+.home .box-container .image {
+  width: 100%;
+}
+.home .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.home .image .size {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+
+.Title_Triangle {
+  padding: 1rem;
+  height: 5rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #000000;
+}
+.Title_Triangle h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+/* -----------slider section starts---------- */
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  background: var(--light-color);
+}
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper #prev {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background: #ffffff;
+  text-align: center;
+  /* justify-content: center; */
+  line-height: 30px;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 50%;
+  position: absolute;
+  color: #000000;
+  box-shadow: -1px 2px 15px -4px rgba(0, 0, 0, 0.66);
+  top: 50%;
+  transform: translateY(-50%);
+  left: -2rem;
+  margin: 1rem;
+}
+.wrapper #next {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 50%;
+  position: absolute;
+  color: #000000;
+  box-shadow: -1px 2px 15px -4px rgba(0, 0, 0, 0.66);
+  top: 50%;
+  transform: translateY(-50%);
+  right: -2rem;
+  margin: 1rem;
+}
+
+.wrapper .carouse1 {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 5) - 0.5rem);
+  gap: 1.5rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+.carouse1 :where(.card, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carouse1 .card {
+  list-style: none;
+  background: #fff;
+  border-radius: 8px;
+  height: 30rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  box-shadow: -1px 2px 15px -4px rgba(0, 0, 0, 0.66);
+}
+
+.card .image-content h2 {
+  font-size: 1.5rem;
+}
+.card .image-content p {
+  font-size: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  padding: 0.5rem 0.8rem;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* driving institutes section */
+
+.popular .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.popular .box-container .box {
+  padding: 2rem;
+  background: #ffffff;
+  /* box-shadow: 0.2rem 0.5rem #00000033; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
+  border-radius: 2rem;
+  text-align: center;
+  flex: 1 1 30rem;
+  position: relative;
+  border: 0.1rem solid #000000;
+}
+.popular .box-container .box img {
+  height: 25rem;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1.7rem;
+  z-index: -1;
+}
+
+.popular .box-container .box h3 {
+  color: #000000;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.popular .box-container .box .stars {
+  color: gold;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+}
+.popular .box-container .box .btn {
+  margin: 2rem;
+}
+
+.order .row {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-radius: 3.5rem;
+}
+.order .row .image {
+  flex: 1 1 30rem;
+}
+.order .row form {
+  flex: 1 1 50rem;
+}
+.order .row .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3rem;
+  object-fit: cover;
+}
+.order .row form .inputbox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.order .row form .inputbox input,
+.order .row form textarea {
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: none;
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+  width: 49%;
+}
+.order .row form textarea {
+  width: 100%;
+  resize: none;
+  height: 15rem;
+}
+.order .row form .btn {
+  background: none;
+}
+.order .row form .btn:hover {
+  background: var(--red);
+}
+.footer1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: var(--black);
+}
+.footer1 div {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.footer1 li {
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.footer1 h3 {
+  position: relative;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.footer_end {
+  display: flex;
+  justify-content: space-between;
+  background: #202020;
+  color: #fff;
+  text-transform: capitalize;
+}
+.footer_end .logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: 0 2rem;
+}
+.footer_end h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+/* media queries */
+@media (max-width: 991px) {
+  html {
+    font-size: 45%;
+  }
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 1rem;
+  }
+  .home {
+    min-height: 60vh;
+  }
+}
+
+/* media queries */
+
+@media (max-width: 820px) {
+  .home {
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 730px) {
+  header .icons #menu_bars {
+    display: inline-block;
+  }
+  header .Navbar {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .Navbar .search-bar,
+  header .Navbar button {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+  }
+  .Navbar.active {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+
+  .Navbar a {
+    justify-content: center;
+    text-align: center;
+    display: block;
+    color: var(--red);
+    padding: 1.5rem;
+    margin: 2rem;
+    font-size: 2rem;
+    border: 0.2rem solid var(--green);
+  }
+  header .Navbar a:hover {
+    background: var(--green);
+    color: #fff;
+
+    transition: all 0.5s ease;
+  }
+  .wrapper .carouse1 {
+    width: auto;
+    grid-auto-columns: calc((100% / 4) - 0.5rem);
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .home .image {
+    width: 100%;
+  }
+  .order .row form .inputbox input {
+    width: 100%;
+  }
+  .wrapper .carouse1 {
+    grid-auto-columns: calc((100% / 2.5) - 1rem);
+    gap: 2rem;
+  }
+}
